@@ -63,7 +63,7 @@ h1, h2, h3 { font-weight: 700; line-height: 1.25; margin: 0; }
 
 .portrait {
   width: 180px;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   border-radius: 6px;
   background: var(--media-bg);
   display: grid;
