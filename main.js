@@ -21,24 +21,31 @@
   });
 })();
 
-// Teaser videos: play on hover with a mouse; play while on screen on touch devices.
+// Teaser videos autoplay (muted, looping) while on screen and pause when scrolled away,
+// so off-screen videos don't download or decode. Visitors who ask for reduced motion
+// get the poster frame and can play a video by hovering or tapping it.
 (function () {
   const videos = document.querySelectorAll('.pub video');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const canHover = window.matchMedia('(hover: hover)').matches;
 
   function play(v) { const p = v.play(); if (p) p.catch(() => {}); }
 
-  if (canHover) {
+  if (reduceMotion) {
     videos.forEach(v => {
       const row = v.closest('.pub');
       row.addEventListener('mouseenter', () => play(v));
-      row.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
+      row.addEventListener('mouseleave', () => v.pause());
+      v.addEventListener('click', () => (v.paused ? play(v) : v.pause()));
     });
-  } else if (!reduceMotion && 'IntersectionObserver' in window) {
+    return;
+  }
+
+  if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
       entries.forEach(en => (en.isIntersecting ? play(en.target) : en.target.pause()));
-    }, { threshold: 0.6 });
+    }, { threshold: 0.25 });
     videos.forEach(v => io.observe(v));
+  } else {
+    videos.forEach(play);
   }
 })();
