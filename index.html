@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul Hyunbin Cho</title>
+  <meta name="description" content="Paul Hyunbin Cho — M.S. student at KAIST AI working on controllable video generation with diffusion models.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23003c8c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="intro">
+    <div class="intro-text">
+      <h1>Paul Hyunbin Cho</h1>
+      <p class="role">M.S. Student, KAIST AI &middot; Research Intern, Kakao</p>
+      <p>
+        I am an M.S. student in Artificial Intelligence at <a href="https://cvlab.kaist.ac.kr">KAIST</a>,
+        advised by Prof. <a href="https://cvlab.kaist.ac.kr">Seungryong Kim</a>, and a research intern at Kakao.
+        I study <em>controllable video generation</em>: diffusion models that follow audio, text, or user actions
+        while staying coherent over long sequences. I am working to extend this toward interactive world models.
+      </p>
+      <p>
+        Before KAIST, I received a B.S.E. in Computer Science and Engineering and a B.A. in American Culture
+        from Sogang University.
+      </p>
+      <nav class="links" aria-label="Profiles">
+        <a href="mailto:paulh.cho@kaist.ac.kr">Email</a>
+        <a href="https://scholar.google.com/citations?user=hJ3-9X0AAAAJ">Google Scholar</a>
+        <a href="https://github.com/paulcho98">GitHub</a>
+      </nav>
+    </div>
+    <div class="portrait" aria-hidden="true">
+      <!-- TODO: replace with <img src="assets/img/profile.jpg" alt="Paul Hyunbin Cho"> -->
+      <span>PHC</span>
+    </div>
+  </header>
+
+  <section aria-labelledby="news-h">
+    <h2 id="news-h">News</h2>
+    <ul class="news">
+      <li><time>Oct 2026</time><span><a href="https://arxiv.org/abs/2610.10524">GRACE</a>, generation-aware latent compression for efficient video generation, is on arXiv.</span></li>
+      <!-- TODO: acceptance months -->
+      <li><time>2026</time><span><a href="https://arxiv.org/abs/2605.26230">GARD</a> accepted to <b>NeurIPS 2026</b>.</span></li>
+      <li><time>Jun 2026</time><span><a href="https://arxiv.org/abs/2606.11180">Lip Forcing</a>, few-step autoregressive diffusion for real-time lip synchronization, is on arXiv.</span></li>
+      <li><time>2026</time><span><a href="https://arxiv.org/abs/2512.05081">Deep Forcing</a> accepted to <b>ICML 2026</b>.</span></li>
+      <li><time>Mar 2026</time><span>Joined Kakao as a research intern.</span></li>
+      <li><time>2026</time><span><a href="https://arxiv.org/abs/2506.09993">TAIR</a> accepted to <b>ICLR 2026</b>.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="pubs-h">
+    <div class="section-head">
+      <h2 id="pubs-h">Publications</h2>
+      <div class="toggle" role="group" aria-label="Publication view" hidden>
+        <button type="button" data-view="selected" aria-pressed="true">Selected</button>
+        <button type="button" data-view="all" aria-pressed="false">All</button>
+      </div>
+    </div>
+    <p class="legend"><sup>*</sup> equal contribution</p>
+
+    <ol class="pubs" data-view="all">
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <video muted loop playsinline preload="none" poster="assets/media/grace.jpg"><source src="assets/media/grace.mp4" type="video/mp4"></video>
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/GRACE/">GRACE: Generation-Aware Latent Compression for Efficient Video Generation</a></h3>
+          <p class="authors">Jiyoung Kim, <b>Paul Hyunbin Cho</b>, Jisu Nam, Donghoon Lee, Hyunsung Go, Yeonkyeong Lee, Hansaem Kim, Seungryong Kim</p>
+          <p class="venue">arXiv 2026 <span class="note">under review</span></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2610.10524">arXiv</a><a href="https://cvlab-kaist.github.io/GRACE/">Project</a><a href="https://github.com/cvlab-kaist/GRACE">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <video muted loop playsinline preload="none" poster="assets/media/lipforcing.jpg"><source src="assets/media/lipforcing.mp4" type="video/mp4"></video>
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/LipForcing/">Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization</a></h3>
+          <p class="authors"><b>Paul Hyunbin Cho</b><sup>*</sup>, Jinhyuk Jang<sup>*</sup>, SeokYoung Lee, Joungbin Lee, Siyoon Jin, Heeseong Shin, Jung Yi, Yunjin Park, Chulmin Park, Seungryong Kim</p>
+          <p class="venue">arXiv 2026 <span class="note">under review</span></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2606.11180">arXiv</a><a href="https://cvlab-kaist.github.io/LipForcing/">Project</a><a href="https://github.com/cvlab-kaist/LipForcing">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <img src="assets/media/gard.jpg" alt="Degraded vs. restored multi-view 3D point clouds" loading="lazy">
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/GARD/">Geometry-Aware Representation Denoising for Robust Multi-view 3D Reconstruction</a></h3>
+          <p class="authors">Jin Hyeon Kim<sup>*</sup>, Jaeeun Lee<sup>*</sup>, Claire Kim, Kyoungjin Oh, <b>Paul Hyunbin Cho</b>, Jaewon Min, Yeji Choi, Jihye Park, Hyunhee Park, Minkyu Park, Seungryong Kim</p>
+          <p class="venue"><b>NeurIPS 2026</b></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2605.26230">arXiv</a><a href="https://cvlab-kaist.github.io/GARD/">Project</a><a href="https://github.com/cvlab-kaist/GARD">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <video muted loop playsinline preload="none" poster="assets/media/worldkv.jpg"><source src="assets/media/worldkv.mp4" type="video/mp4"></video>
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/WorldKV/">WorldKV: Efficient World Memory with World Retrieval and Compression</a></h3>
+          <p class="authors">Jung Yi, Minjae Kim, <b>Paul Hyunbin Cho</b>, Wooseok Jang, Sangdoo Yun, Seungryong Kim</p>
+          <p class="venue">arXiv 2026 <span class="note">under review</span></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2605.22718">arXiv</a><a href="https://cvlab-kaist.github.io/WorldKV/">Project</a><a href="https://github.com/cvlab-kaist/WorldKV">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="media">
+          <img src="assets/media/daflow.jpg" alt="Optical flow on a degraded frame: DA-Flow vs. RAFT and FlowSeek" loading="lazy">
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/DA-Flow/">DA-Flow: Degradation-Aware Optical Flow Estimation with Diffusion Models</a></h3>
+          <p class="authors">Jaewon Min, Jaeeun Lee, Yeji Choi, <b>Paul Hyunbin Cho</b>, Jin Hyeon Kim, Tae-Young Lee, Jongsik Ahn, Hwayeong Lee, Seonghyun Park, Seungryong Kim</p>
+          <p class="venue">arXiv 2026 <span class="note">under review</span></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2603.23499">arXiv</a><a href="https://cvlab-kaist.github.io/DA-Flow/">Project</a><a href="https://github.com/cvlab-kaist/DA-Flow">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <video muted loop playsinline preload="none" poster="assets/media/deepforcing.jpg"><source src="assets/media/deepforcing.mp4" type="video/mp4"></video>
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/DeepForcing/">Deep Forcing: Training-Free Long Video Generation with Deep Sink and Participative Compression</a></h3>
+          <p class="authors">Jung Yi, Wooseok Jang, <b>Paul Hyunbin Cho</b>, Jisu Nam, Heeji Yoon, Seungryong Kim</p>
+          <p class="venue"><b>ICML 2026</b></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2512.05081">arXiv</a><a href="https://cvlab-kaist.github.io/DeepForcing/">Project</a><a href="https://github.com/cvlab-kaist/DeepForcing">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="media">
+          <img src="assets/media/unit.jpg" alt="Text-degraded input vs. UniT's restored image" loading="lazy">
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/UniT/">UniT: Unified Diffusion Transformer for High-fidelity Text-Aware Image Restoration</a></h3>
+          <p class="authors">Jin Hyeon Kim, <b>Paul Hyunbin Cho</b>, Claire Kim, Jaewon Min, Jaeeun Lee, Jihye Park, Yeji Choi, Seungryong Kim</p>
+          <p class="venue">arXiv 2025</p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2512.08922">arXiv</a><a href="https://cvlab-kaist.github.io/UniT/">Project</a><a href="https://github.com/cvlab-kaist/UniT">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub" data-selected>
+        <div class="media">
+          <video muted loop playsinline preload="none" poster="assets/media/tair.jpg"><source src="assets/media/tair.mp4" type="video/mp4"></video>
+        </div>
+        <div class="body">
+          <h3><a href="https://cvlab-kaist.github.io/TAIR/">Text-Aware Image Restoration with Diffusion Models</a></h3>
+          <p class="authors">Jaewon Min, Jin Hyeon Kim, <b>Paul Hyunbin Cho</b>, Jaeeun Lee, Jihye Park, Minkyu Park, Sangpil Kim, Hyunhee Park, Seungryong Kim</p>
+          <p class="venue"><b>ICLR 2026</b></p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2506.09993">arXiv</a><a href="https://cvlab-kaist.github.io/TAIR/">Project</a><a href="https://github.com/cvlab-kaist/TAIR">Code</a></p>
+        </div>
+      </li>
+
+      <li class="pub no-media">
+        <div class="body">
+          <h3><a href="https://doi.org/10.1109/ICCE63647.2025.10930116">Enhancing Sidewalk Maintenance through Accurate Joint Deflection Measurement</a></h3>
+          <p class="authors">Jisoo Park<sup>*</sup>, Seonghak Lee<sup>*</sup>, <b>Paul Hyunbin Cho</b><sup>*</sup>, Zongkai Xia, Loucif Hebbache</p>
+          <p class="venue"><b>ICCE 2025</b></p>
+          <p class="plinks"><a href="https://doi.org/10.1109/ICCE63647.2025.10930116">Paper</a></p>
+        </div>
+      </li>
+
+      <li class="pub no-media">
+        <div class="body">
+          <h3><a href="https://doi.org/10.1007/s11227-024-06682-w">Efficient GNN-based Social Recommender Systems through Social Graph Refinement</a></h3>
+          <p class="authors">Sangmin Ga, <b>Paul Hyunbin Cho</b>, Gordon Euhyun Moon, Sungwon Jung</p>
+          <p class="venue"><i>The Journal of Supercomputing</i>, 2024</p>
+          <p class="plinks"><a href="https://doi.org/10.1007/s11227-024-06682-w">Paper</a></p>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <h3>Kakao</h3>
+        <span class="when">Mar 2026 &ndash; Present</span>
+      </div>
+      <p class="job-role">Research Intern &middot; Seongnam, Korea</p>
+      <ul class="projects">
+        <li>
+          <span class="ptitle">Acceleration of audio-driven portrait animation with autoregressive video diffusion models</span>
+          Distilled an audio-driven portrait animation model into a few-step autoregressive video diffusion model for streaming generation; integrated into KakaoTalk&rsquo;s video generation service.
+        </li>
+        <li>
+          <span class="ptitle">Latent compression for efficient video diffusion &middot; <a href="https://cvlab-kaist.github.io/GRACE/">GRACE</a></span>
+          Co-designed and evaluated GRACE, which compresses the latent space of a pretrained video autoencoder to 8&times; fewer tokens while keeping DiT compatibility; further step-distilled it into bidirectional and autoregressive few-step models, for a 117.7&times; total speedup over Wan2.1-I2V-14B.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Paul Hyunbin Cho &middot; Last updated November 2026</p>
+  </footer>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
