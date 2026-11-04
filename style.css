@@ -166,6 +166,16 @@ h2 {
 sup { font-size: 0.7em; line-height: 0; }
 
 /* ---------- Experience ---------- */
+.job { display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start; }
+.job-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background: #ffcd00;         /* Kakao yellow; same in both color schemes */
+  display: grid;
+  place-items: center;
+}
+.job-logo img { width: 80%; filter: brightness(0); }   /* official wordmark, rendered black on yellow */
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
 .job-head h3 { font-size: 1.05rem; }
 .when { color: var(--faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -187,4 +197,7 @@ footer p { margin: 0; }
   .portrait { order: -1; width: 120px; }
   .pub { grid-template-columns: 1fr; gap: 12px; }
   .news li { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
+  .job { grid-template-columns: 48px 1fr; gap: 14px; }
+  .job-logo { width: 48px; height: 48px; border-radius: 11px; }
+  .job-head { flex-wrap: wrap; gap: 0 12px; }
 }
